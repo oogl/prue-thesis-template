@@ -8,12 +8,6 @@
 % +--------------------------------------------------+
 % |                  Page formatting                 |
 % +--------------------------------------------------+
-\usepackage{fancyhdr}                   % Page numbers
-\fancyhf{}                              % Delete current heading/footer configuration
-\fancyhead[C]{\thepage}                 % Put page number to the center of the page header
-\renewcommand{\headrulewidth}{0pt}      % Delete bottom border of the page header
-\pagestyle{fancy}                       % Apply styles
-
 % Paper size, margins
 \usepackage{geometry}
 \geometry{
@@ -22,6 +16,13 @@
     right=10mm,
     vmargin=25mm,
 }
+
+% Page number position
+\usepackage{fancyhdr}
+\fancyhf{}                              % Delete current heading/footer configuration
+\fancyhead[C]{\thepage}                 % Put page number to the center of the page header
+\renewcommand{\headrulewidth}{0pt}      % Delete bottom border of the page header
+\pagestyle{fancy}                       % Apply styles
 
 % +--------------------------------------------------+
 % |                 Fonts and spacing                |
