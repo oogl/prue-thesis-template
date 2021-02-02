@@ -38,3 +38,18 @@
 % Paragraph indentation
 \usepackage{indentfirst}
 \setlength\parindent{1.25cm}
+
+% +--------------------------------------------------+
+% |                 Table of contents                |
+% +--------------------------------------------------+
+% Depth of ToC: 1 is chapter, 2 is subsection, etc.
+\setcounter{tocdepth}{2}
+
+\usepackage{tocloft}
+% Dots separator for sections and their interval
+\renewcommand\cftsecdotsep{4.5}
+% Line space between sections
+\setlength{\cftbeforesecskip}{0pt}
+
+% Links in ToC
+\usepackage[hidelinks]{hyperref}
