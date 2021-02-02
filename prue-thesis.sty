@@ -53,3 +53,32 @@
 
 % Links in ToC
 \usepackage[hidelinks]{hyperref}
+
+% +--------------------------------------------------+
+% |                 Titles (headers)                 |
+% +--------------------------------------------------+
+\usepackage{titlesec}
+
+% Format and spacing of section
+\titleformat{\section}
+    [block]                         % no indentation
+    {\Large\bfseries\filcenter}     % format
+    {Глава \thesection. }           % label
+    {0em}                           % sep
+    {}                              % before
+\titlespacing{\section}
+    {0pt}       % left
+    {18pt}      % beforesep
+    {18pt}      % aftersep
+
+% Format and spacing of section
+\titleformat{\subsection}
+    [block]                         % no indentation
+    {\large\bfseries\filcenter}     % format
+    {\thesubsection. }              % label
+    {0em}                           % sep
+    {}                              % before
+\titlespacing{\subsection}
+    {0pt}       % left
+    {18pt}      % beforesep
+    {18pt}      % aftersep
