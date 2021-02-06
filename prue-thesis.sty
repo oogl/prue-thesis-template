@@ -47,10 +47,22 @@
 \setcounter{tocdepth}{2}
 
 \usepackage{tocloft}
-% Dots separator for sections and their interval
-\renewcommand\cftsecdotsep{4.5}
-% Line space between sections
-\setlength{\cftbeforesecskip}{0pt}
+
+% Sections
+\renewcommand{\cftsecpresnum}{Глава }       % Text before the number
+\renewcommand{\cftsecaftersnum}{.}          % Text after the number
+\newlength\tocseclength                     % New number length
+\settowidth\tocseclength{\cftsecpresnum}
+\addtolength\cftsecnumwidth{\tocseclength}
+\renewcommand\cftsecdotsep{4.5}             % Separator: dots and their interval
+\setlength{\cftbeforesecskip}{0pt}          % Line space between sections
+
+% Subsections
+\renewcommand{\cftsubsecaftersnum}{.}       % Text after the number
+\setlength{\cftsubsecindent}{2.222em}       % Text with the same indentation as section one
+
+% No hyphens in ToC
+\renewcommand{\@tocrmarg}{\@pnumwidth plus1fil}
 
 % Links in ToC
 \usepackage[hidelinks]{hyperref}
@@ -58,7 +70,7 @@
 % +--------------------------------------------------+
 % |                 Titles (headers)                 |
 % +--------------------------------------------------+
-\usepackage{titlesec}
+\usepackage[raggedright]{titlesec}  % raggedright = no hyphens
 
 % Format and spacing of section
 \titleformat{\section}
