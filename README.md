@@ -1,5 +1,6 @@
 # prue-thesis-template
 [![GitHub](https://img.shields.io/github/license/oogl/prue-thesis-template)](https://github.com/oogl/prue-thesis-template/blob/master/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/oogl/prue-thesis-template)](https://github.com/oogl/prue-thesis-template/commits/master)
 
 Шаблон диплома РЭУ в LaTeX. Альтернатива шаблонам ВКР бакалавра от кафедры ПИиИБ.
 
