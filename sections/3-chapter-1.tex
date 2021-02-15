@@ -18,8 +18,10 @@
 
 Логотип организации представлен на рисунке \ref{fig:prue:logo} (страница \pageref{fig:prue:logo}). В таблице \ref{table:example} можно наблюдать пример таблицы на несколько страниц. С переводом таблиц в \LaTeX{} поможет https://tableconvert.com/?output=latex.
 
+\begin{landscape}
 \begin{xltabular}
-{\textwidth}
+% {\textwidth}
+{0.8\paperheight}
 {|   p{0.04\textwidth}   |   X   |   p{0.14\textwidth}   |   p{0.2\textwidth}   |   p{0.14\textwidth}   |}
 \caption{Пример очень длинной таблицы} \label{table:example} \\ \hline
     № п/п & Столбец 1 & Столбик 2 & Столб 3 & Столбчище 4 \\ \hline
@@ -62,6 +64,7 @@
     32  & Южное полушарие совершает широкий архипелаг.                & Ю                 & 1234567890     & -           \\ \hline
     33  & Южное полушарие совершает широкий архипелаг.                & Я                 & 1234567890     & -           \\ \hline
 \end{xltabular}
+\end{landscape}
 
 \subsubsection{Организационная структура и система управления}
 
