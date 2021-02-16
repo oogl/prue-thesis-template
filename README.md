@@ -51,3 +51,25 @@ prue-thesis-template
 ├── thesis.tex
 └── YOUR-DATA.tex
 ```
+
+## Как пользоваться шаблоном
+
+### Overleaf
+Если к аккаунту в [OverLeaf](https://www.overleaf.com) привязаны Git+Github:
+1. [Сделать ветку](https://github.com/oogl/prue-thesis-template/fork) этого репозитория
+2. Импортировать проект с GitHub
+
+Если к аккаунту в [OverLeaf](https://www.overleaf.com) не привязаны Git+Github:
+1. [Скачать архив](https://github.com/oogl/prue-thesis-template/archive/master.zip)
+2. Добавить новый проект из архива
+
+### Локально
+TBD
+
+### Файлы
+* `thesis.tex` - главный файл для компилации с основной структурой документа
+* [`thesis.pdf`](https://github.com/oogl/prue-thesis-template/blob/master/thesis.pdf) - пример полученного PDF-файла
+* `sections/` - папка с разделами и основным текстом, ссылки на разделы добавлять в `thesis.tex`
+* `src/code/` - папка с файлами программ для вставки листингов
+* `src/img/` - папка с изображениями для вставки в документ
+* `src/pdf/` - папка с PDF-файлами для вставки готовых страниц
